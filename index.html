@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portifolio</title>
+</head>
+<body>
+
+    <header class="header">
+            <div class="background">
+            <img src="https://i.imgur.com/jimrzd8.jpeg" alt="Imagem do site Imgur.com">
+            </div>
+            <div class="perfil">
+                <div class="dadosp">
+                <div class="ftperfil">
+                    <a href="#"><img src="https://i.imgur.com/yA0d7Em.jpg" title="source: imgur.com" /></a>
+                </div>  
+                <div class="txt">
+                    <h1>Osvaldo Alves</h1>
+                    <h3>Sub Titulo</h3>
+                    </div>
+            </div>
+            </div>
+            <div class="redes">
+                <div id="style-redes" class="linkedin">
+                    <a href="#"><img src="https://i.imgur.com/acF3TpW.png" title="source: imgur.com" /></a>
+                </div>
+                
+                <div id="style-redes" class="codepen">
+                    <a href="#"><img src="https://i.imgur.com/y2HUCad.png" title="source: imgur.com" /></a>
+                </div>
+            </div>
+            <div class="inspiracao">
+                <h4>Site Inspirado em:...(nome do site que esqueci)</h4>
+            </div>
+    </header>
+
+    <header class="info">
+                <nav>
+                    <ul>
+                        <li><a href="#sessao1">Apresentação</a></li>
+                        <li><a href="#sessao2">Projetos</a></li>
+                        <li><a href="#sessao3">OUTRA OPÇÃO</a></li>
+                    </ul>
+                </nav>
+              
+            <section id="sessao1">
+                <div class="apresentacao">
+                    <h1>Nome Completo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta, dolore saepe aliquid nisi culpa dolores nihil eum delectus ea, ut quae voluptates. Mollitia aperiam dolor impedit quo facere aut.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid exercitationem quis, dignissimos quod, quo deserunt voluptates ex debitis nisi eius vero blanditiis? Modi officiis dolorem labore accusamus nostrum assumenda vitae!</p>
+                </div>
+            </section>
+
+            <section id="sessao2">
+                
+                    <div  id="box" class="proj1">
+                        <h4>EM BREVE</h4>
+                    </div>
+
+                    <div id="box" class="proj2">
+                        <h4>EM BREVE</h4>
+                    </div>
+
+                    <div id="box" class="proj3">
+                        <h4>EM BREVE</h4>
+                    </div>
+            </section>
+
+            <section id="sessao3">
+                <h1>sessão3</h1>
+            </section>
+
+            <footer>
+                
+            </footer>
+
+
+       
+
+    </header>
+
+    
+
+    
+</body>
+</html>
+
+
+body{
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 320px;
+    max-height: 1000px;
+}
+.header{ 
+    
+    background-color: black;
+    position: fixed;
+}
+.background{
+    background-color: black;
+    position: absolute;
+}
+.background img{
+    margin-top: 0;
+    height: 757px;
+    width: 635px;
+    opacity: 89%;
+}
+.perfil{
+    position:relative;
+    width: 635px;
+    height: 500px;
+}
+
+.dadosp{
+    height: 480px;
+    top: 400px;
+}
+ .ftperfil{
+    box-shadow:  1px 1px 8px 2px gray;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 242.5px;
+    margin-top: 175px;
+ }
+.ftperfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}     
+.dadosp {
+    
+    text-align: center;
+    color: rgb(180, 171, 171);
+}
+.info{
+    background-color: rgba(240, 240, 240, 0.418);
+    position: relative;
+    margin-left: 635px;
+    
+    height: 900px;
+}
+
+.redes{
+    display: flex;
+    position: absolute;
+    width: 250px;
+    margin-left: 190px;
+    margin-top: -150px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: rgb(180, 171, 171)
+}
+
+.linkedin img, .codepen img{
+    width: 50%;
+    color: white;
+}
+
+#style-redes{
+    margin-left: 40px;
+    
+}
+.inspiracao{
+    position: fixed;
+    left: 12px;
+    bottom: 3px;
+    text-align: center;
+    width: 15%;
+    font-size: 10px;
+}
+.inspiracao h4{
+    color: rgb(180, 171, 171)
+}
+.apresentacao{
+    min-width: 320px;
+    max-height: 1000px;
+    color: gray;
+    height: 200px;
+}
+.apresentacao p{
+    font-size: 20px;
+    margin: 4%;
+    line-height: 25px;
+    
+}
+.apresentacao h1{
+    text-align: center;
+}
+
+
+nav{
+    width: 95%;
+    position: fixed;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    
+    
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    color: rgb(107, 103, 103);
+    text-align: center;
+    font-weight: 895;
+    text-transform: uppercase;
+    transition:  all .25s  ease-in-out;
+    margin-left: 125px;
+}
+nav ul li a:hover{
+    color: rgb(17, 17, 17);
+    background: gray;
+    border-radius: 5%;
+    padding: 5px;
+    transition: .80s;
+}
+
+section{
+    width:100% ;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#sessao1{
+    color: gray;
+    
+    height: 150px;
+}
+
+#sessao1 h1{
+    text-align: center;
+}
+#sessao2 div{
+    
+    padding: 100px;
+}
+
+#box{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.377);
+    margin-left: 5px;
+    box-shadow: 1px 5px 10px rgb(68, 68, 68);
+    border-radius: 5px;
+}
+
+#box:hover{
+    padding:110px ;
+}
+
+footer{
+    
+    padding: 50px;
+}
+    
